@@ -1,0 +1,10 @@
+import './error.js';
+import './tp-button.js';
+import './tp-confirm.js';
+import './tp-datum-input.js';
+import './tp-header.js';
+import './tp-me.js';
+import './tp-teilnahme.js';
+import './tp-termin.js';
+import './tp-text-input.js';
+import './tp-uhrzeit-input.js';

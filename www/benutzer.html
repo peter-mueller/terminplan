@@ -1,0 +1,76 @@
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="module" src="js/shell.js"></script>
+
+
+        <script type="module" src="benutzer.js"></script>
+
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                display: none;
+            }
+
+            #actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 4px;
+            }
+
+
+            section {
+                padding: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                max-width: 512px;
+                margin: 0 auto;
+            }
+
+            .benutzer {
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                background-color: darkgray;
+            }
+
+            .actions {
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+            }
+
+            .name {
+                font-family: monospace, system-ui, sans-serif;
+                flex-basis: 128px;
+                flex-grow: 0;
+                width: 128px;
+                word-break: break-all;
+            }
+        </style>
+        </style>
+    </head>
+    <body>
+
+        <tp-header></tp-header>
+
+        <section>
+            <tp-text-input label="Benutzername" id="benutzername"></tp-text-input>
+            <tp-button id="benutzeranlegen">Benutzer anlegen</tp-button>
+        </section>
+
+        <section id="benutzerlist">
+
+        </section>
+
+        <tp-confirm id="confirm"></tp-confirm>
+        <tp-confirm id="confirmInfo" info></tp-confirm>
+
+</html>

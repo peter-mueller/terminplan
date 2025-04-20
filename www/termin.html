@@ -1,0 +1,64 @@
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="module" src="js/shell.js"></script>
+
+
+        <script type="module" src="termin.js"></script>
+
+        <style>
+            body {
+                font-family: system-ui, sans-serif;
+                display: none;
+            }
+
+            #actions {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 4px;
+            }
+
+
+            section {
+                padding: 8px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                max-width: 512px;
+                margin: 0 auto;
+            }
+
+            #teilnahmen {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+            tp-teilnahme {
+                background-color: burlywood;
+                padding: 8px;
+                border-radius: 4px;
+            }
+        </style>
+        </style>
+    </head>
+    <body>
+
+        <tp-header></tp-header>
+
+        <section id="terminSection">
+            <tp-termin id="termin"></tp-termin>
+
+            <div id="actions">
+                <tp-button id="speichern">Termindaten Speichern</tp-button>
+            </div>
+
+            <div id="teilnahmen">
+
+            </div>
+        </section>
+
+</html>
